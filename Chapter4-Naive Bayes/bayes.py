@@ -36,6 +36,10 @@ def setOfWords2Vec(vocabList, inputSet):
 Parameters:
     trainMatrix:词向量，对每一组语句，使用上面的setOfWords2Vec()方法计算这条语句中的词是否在整个词汇表中出现
     trainCategory:类别向量，由loadDataSet()方法中的classVec得到
+Return:
+    所有数据中class=1的概率
+    在class=1时，每个词出现的概率
+    在class=0时，每个词出现的概率
 """
 def trainNB0(trainMatrix, trainCategory):
     dataSetLength = len(trainCategory) #用于测试的数据的规模
@@ -64,6 +68,10 @@ def trainNB0(trainMatrix, trainCategory):
 Parameters:
     trainMatrix:词向量，对每一组语句，使用上面的setOfWords2Vec()方法计算这条语句中的词是否在整个词汇表中出现
     trainCategory:类别向量，由loadDataSet()方法中的classVec得到
+Return:
+    所有数据中class=1的概率
+    在class=1时，每个词出现的概率
+    在class=0时，每个词出现的概率
 """
 def trainNB1(trainMatrix, trainCategory):
     dataSetLength = len(trainCategory) #用于测试的数据的规模
